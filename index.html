@@ -219,7 +219,13 @@
             <label for="playerNumber">Character Number (1-10):</label>
             <input type="number" id="playerNumber" min="1" max="10" value="9" />
 
-            <button onclick="analyzeData()">🔍 Analyze Items</button>
+            <button onclick="analyzeData()">🔍 Analyze Items</button><br />
+            <div class="info">
+                <strong>WP Offset:</strong>
+                The displayed Weapon Power (WP) is lower than the actual WP shown ingame as different
+                factors ingame increase the shown value (e.g. mine is here 22 and ingame 42). As is for all items the
+                same, its just an offset.
+            </div>
 
             <div id="message"></div>
         </div>
@@ -240,6 +246,16 @@
                 <div id="ringsStat2Table"></div>
             </div>
         </div>
+        Version History:<br>
+        <ul>
+            <li>Version 0.0.2 - Info added regarding WP offset</li>
+            <li>Version 0.0.1 - Basic Version created</li>
+        </ul>
+        TODOs:<br>
+        <ul>
+            <li>Preselect AC</li>
+            <li>Calculate actual WP</li>
+        </ul>
     </div>
 
     <script src="arcane.js"></script>
